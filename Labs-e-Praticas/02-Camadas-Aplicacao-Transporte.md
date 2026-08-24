@@ -1,8 +1,8 @@
 # 🌐 Configuração de Serviços (HTTP/DNS) e Análise de Protocolos
 
-Neste laboratório prático, construí uma rede funcional do zero para configurar serviços de aplicação e analisar o comportamento dos protocolos na camada de transporte. 
+Neste laboratório prático, construi uma rede funcional do zero para configurar serviços de aplicação e analisar o comportamento dos protocolos na camada de transporte. 
 
-Esta atividade compõe o meu portfólio prático desenvolvido durante o programa **Mulher Digital**, consolidando conceitos fundamentais de infraestrutura que são a base para a minha futura atuação em **Segurança da Informação**.
+---
 
 ## 🛠️ O que eu usei
 * **Simulador:** Cisco Packet Tracer
