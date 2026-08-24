@@ -2,7 +2,7 @@
 
 Neste projeto prático, simulei e configurei a infraestrutura de rede de um pequeno escritório (SOHO). O objetivo foi integrar conectividade cabeada e sem fio (Wi-Fi), garantindo a segurança básica da rede e a distribuição automática de endereços IP.
 
-Esta atividade integra meu portfólio de projetos do programa **Mulher Digital**, pavimentando minha base técnica em redes para a minha futura graduação em **Segurança da Informação**.
+---
 
 ## 🛠️ O que eu usei
 * **Simulador:** Cisco Packet Tracer
