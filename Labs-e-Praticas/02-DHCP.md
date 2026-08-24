@@ -4,7 +4,7 @@ Neste projeto prático, configurei um roteador Cisco para atuar como servidor DH
 
 Esta atividade faz parte do meu portfólio de infraestrutura e redes, construído durante minha jornada no programa **Mulher Digital**, e serve como base para a minha graduação e carreira em **Segurança da Informação**.
 
-## 🛠️ O que eu utilizei
+## 🛠️ O que eu usei
 * **Cisco Packet Tracer** para a simulação da infraestrutura.
 * **1 Roteador Cisco 2911** (atuando como Gateway e Servidor DHCP).
 * **1 Switch Cisco 2960** para a distribuição das conexões locais.
