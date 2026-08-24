@@ -16,7 +16,4 @@ Nesta atividade no Cisco Packet Tracer, montei e validei uma topologia de rede d
 
 Entender o fluxo de tráfego entre Acesso, Distribuição e Núcleo é essencial para a monitoração de segurança em NOC e SOC!
 
-📂 Documentei o passo a passo completo no meu GitHub:
-https://github.com/thaianydias/ciber-ja-md
-
 #Cibersegurança #RedesDeComputadores #Cisco #PacketTracer #NOC #SOC #MulherDigital #JuniorAchievement #Tech transition
