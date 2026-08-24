@@ -23,5 +23,6 @@ Para comprovar o funcionamento, acessei as configurações de rede dos dois PCs 
 
 Ambos enviaram a requisição à rede e, em poucos segundos, foram atualizados automaticamente pelo roteador, recebendo os IPs `192.168.1.2` e `192.168.1.3`, confirmando que o servidor DHCP estava operando perfeitamente.
 
-> 🎥 **Confira a foto demonstrativa da atividade:** 
+---
+### 📸 
 <img width="959" height="502" alt="Captura de tela 2026-08-23 234314" src="https://github.com/user-attachments/assets/89c9a151-a336-4644-9973-720d53708388" />
