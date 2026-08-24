@@ -2,7 +2,7 @@
 
 Neste projeto prático, avancei na complexidade da infraestrutura e implementei uma topologia baseada no modelo hierárquico de 3 camadas da Cisco. 
 
-Esta atividade faz parte do meu desenvolvimento na trilha de Cibersegurança do programa **Mulher Digital** (Junior Achievement Brasil). Entender profundamente o fluxo de tráfego e a arquitetura corporativa é um pilar essencial para o monitoramento de segurança e resposta a incidentes em operações de NOC e SOC.
+---
 
 ## 🛠️ O que eu usei
 * **Simulador:** Cisco Packet Tracer
