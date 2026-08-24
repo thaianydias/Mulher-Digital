@@ -2,7 +2,7 @@
 
 Neste projeto prático, configurei um roteador Cisco para atuar como servidor DHCP. O objetivo principal foi automatizar a distribuição de IPs, Máscara de Sub-rede, Gateway Padrão e Servidor DNS para os computadores de uma rede local. 
 
-Esta atividade faz parte do meu portfólio de infraestrutura e redes, construído durante minha jornada no programa **Mulher Digital**, e serve como base para a minha graduação e carreira em **Segurança da Informação**.
+---
 
 ## 🛠️ O que eu usei
 * **Cisco Packet Tracer** para a simulação da infraestrutura.
