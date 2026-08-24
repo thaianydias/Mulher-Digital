@@ -26,8 +26,7 @@ Após a configuração das três camadas, foquei em garantir que o tráfego esti
 * **Análise de Tráfego:** Utilizei o modo de simulação do Packet Tracer para dissecar os pacotes PDU, observando na prática como os dados se movem e são tratados em cada camada do modelo.
 
 ---
-### 📸 Topologia do Laboratório
-
+### 📸 
 <div align="center">
   <img width="1600" height="839" alt="1786539636895" src="https://github.com/user-attachments/assets/1fd0022e-eff0-4f59-a458-ae0389b39e8a" />
  
