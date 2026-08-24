@@ -30,5 +30,6 @@ Para comprovar o funcionamento da rede e dos serviços, realizei duas fases de t
   * Utilizando o modo de simulação do Packet Tracer (filtrando apenas os protocolos DNS, TCP, HTTP e ICMP), capturei os pacotes trafegando pela rede.
   * Inspecionei as informações das PDUs (Protocol Data Units), observando na prática as mudanças e o encapsulamento de cabeçalhos ocorrendo nas **Camadas 4 (Transporte)** e **7 (Aplicação)**.
 
-> 🎥 **Confira a imagem demonstrativa da atividade:** 
+---
+### 📸 
 <img width="959" height="503" alt="lab28 07" src="https://github.com/user-attachments/assets/f10575cb-fb93-4fc2-ab96-148003dec9a2" />
