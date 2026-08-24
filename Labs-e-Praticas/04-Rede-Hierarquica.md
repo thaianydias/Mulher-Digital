@@ -1,27 +1,33 @@
-🚀 Prática Hands-On: Configuração e Análise de Redes Hierárquicas Cisco 🌐
+# 🌐 Configuração e Análise de Redes Hierárquicas Cisco
 
-Continuando minha jornada na trilha de Cibersegurança do programa Mulher Digital (Junior Achievement Brasil), concluí mais um laboratório prático focado em arquitetura e infraestrutura de redes corporativas!
+Neste projeto prático, avancei na complexidade da infraestrutura e implementei uma topologia baseada no modelo hierárquico de 3 camadas da Cisco. 
 
-Nesta atividade no Cisco Packet Tracer, montei e validei uma topologia de rede dividida em 3 camadas do modelo hierárquico Cisco:
+Esta atividade faz parte do meu desenvolvimento na trilha de Cibersegurança do programa **Mulher Digital** (Junior Achievement Brasil). Entender profundamente o fluxo de tráfego e a arquitetura corporativa é um pilar essencial para o monitoramento de segurança e resposta a incidentes em operações de NOC e SOC.
 
-🔹 Camada de Acesso: Conectividade direta aos hosts com Switches Cisco 2950.
+## 🛠️ O que eu usei
+* **Simulador:** Cisco Packet Tracer
+* **Camada de Núcleo (Core):** 1 Roteador Cisco 4331 (Responsável pelo roteamento de alta velocidade)
+* **Camada de Distribuição:** 1 Switch Cisco 3650 (Agregação de tráfego e aplicação de políticas)
+* **Camada de Acesso:** Switches Cisco 2950 (Conectividade direta aos hosts finais)
+* **Cabeamento:** Cabos Diretos (Straight-Through)
+* **Dispositivos Finais:** Computadores (PCs)
 
-🔹 Camada de Distribuição: Agregação e aplicação de políticas com Switch Cisco 3650.
+## ⚙️ O que eu fiz
+Construí a rede focando na separação de responsabilidades para otimizar o desempenho e a segurança:
 
-🔹 Camada de Núcleo (Core): Roteamento de alta velocidade configurado via CLI no Roteador Cisco 4331.
+1. **Topologia Física:** Realizei a montagem do cabeamento estruturado, interligando corretamente os switches de acesso ao switch de distribuição, e este ao roteador do núcleo.
+2. **Configuração Base (CLI):** Acessei o Roteador 4331 via terminal e ativei as interfaces de rede (`configure terminal`, `interface`, `ip address`, `no shutdown`), estabelecendo o gateway padrão da rede.
+3. **Endereçamento:** Apliquei endereçamento IP fixo nos hosts para garantir a previsibilidade no roteamento e facilitar os testes.
 
+## 🚀 Validação e Resultados
+Após a configuração das três camadas, foquei em garantir que o tráfego estivesse operando sem gargalos ou falhas de rota:
 
-🛠️ Principais passos executados:
-• Montagem do cabeamento estruturado (Straight-Through);
+* **Conectividade Fim-a-Fim:** Executei testes de `ping` (ICMP) entre os dispositivos da camada de acesso, validando que os pacotes conseguiam transitar perfeitamente até o Core e retornar.
+* **Análise de Tráfego:** Utilizei o modo de simulação do Packet Tracer para dissecar os pacotes PDU, observando na prática como os dados se movem e são tratados em cada camada do modelo.
 
-• Configuração do gateway padrão e interfaces via CLI (`configure terminal`, `ip address`, `no shutdown`);
+---
+### 📸 Topologia do Laboratório
 
-• Atribuição de endereçamento IP fixo para a rede;
-
-• Testes de conectividade fim-a-fim via ICMP (`ping`) e análise de pacotes PDU na ferramenta de simulação.
-
-Entender o fluxo de tráfego entre Acesso, Distribuição e Núcleo é essencial para a monitoração de segurança em NOC e SOC!
-
-#Cibersegurança #RedesDeComputadores #Cisco #PacketTracer #NOC #SOC #MulherDigital #JuniorAchievement #Tech transition
-
-<img width="1600" height="839" alt="1786539636895" src="https://github.com/user-attachments/assets/1fd0022e-eff0-4f59-a458-ae0389b39e8a" />
+<div align="center">
+  <img width="1600" height="839" alt="1786539636895" src="https://github.com/user-attachments/assets/1fd0022e-eff0-4f59-a458-ae0389b39e8a" />
+ 
