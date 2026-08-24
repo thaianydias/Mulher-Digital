@@ -13,7 +13,7 @@ Neste projeto prático, avancei na complexidade da infraestrutura e implementei 
 * **Dispositivos Finais:** Computadores (PCs)
 
 ## ⚙️ O que eu fiz
-Construí a rede seguindo a separação de responsabilidades do modelo hierárquico, visando organização e desempenho:
+Construí uma rede seguindo a separação de responsabilidades do modelo hierárquico, visando organização e desempenho:
 
 1. **Topologia Física:** Realizei a montagem do cabeamento estruturado, interligando corretamente os switches de acesso ao switch de distribuição, e este ao roteador do núcleo.
 2. **Configuração Base (CLI):** Acessei o Roteador 4331 via terminal e ativei as interfaces de rede (`configure terminal`, `interface`, `ip address`, `no shutdown`), estabelecendo o gateway padrão da rede.
