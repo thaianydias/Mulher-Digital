@@ -1,0 +1,36 @@
+# 🌐 Laboratório 5: Configuração de LAN, Roteamento e Serviços ISP (NAT/DHCP/DNS)
+
+Neste projeto prático, estruturei e configurei a integração entre uma rede local (LAN) e a infraestrutura de um Provedor de Serviços de Internet (ISP). O objetivo foi aplicar na prática conceitos avançados de roteamento estático, tradução de endereços (NAT) e provisionamento de serviços de rede (DHCP e DNS).
+---
+
+## 🛠️ O que eu usei
+* **Simulador:** Cisco Packet Tracer
+* **Roteadores:** 2 Roteadores Cisco 1941 (Router-Cliente e Router-ISP)
+* **Módulos de Expansão:** Placas Seriais HWIC-2T
+* **Switch:** 1 Switch Cisco 2960 (Switch-01)
+* **Servidor:** 1 Server-ISP (Atuando como servidor Web e DNS)
+* **End Device:** 1 Computador (PC0)
+* **Cabeamento:** Cabos Diretos (FastEthernet/Gigabit) e Cabo Serial DCE
+
+## ⚙️ O que eu fiz
+Construí a topologia do zero, passando pela montagem física do hardware virtual até a implementação de protocolos de comunicação WAN.
+
+1. **Preparação de Hardware e Cabeamento:** 
+   * Acessei os roteadores 1941, desliguei-os fisicamente no simulador e instalei os módulos `HWIC-2T` para habilitar as conexões seriais.
+   * Conectei os dispositivos da LAN via cabos diretos e interliguei o cliente ao ISP utilizando um link serial (Cabo DCE).
+2. **Configuração da Infraestrutura ISP:** 
+   * No `Server-ISP`, configurei o IP estático (`8.8.8.8`) e ativei o serviço DNS, criando um registro que aponta o domínio `google.com` para o próprio servidor.
+   * Acessei o `Router-ISP` via CLI, configurei o IP da rede local do provedor e da interface serial WAN, além de criar uma rota estática apontando para a rede pública do cliente.
+3. **Configuração da Borda do Cliente (Router-Cliente):** 
+   * **Interfaces:** Configurei os endereços da LAN (`192.168.1.1`) e do link WAN (`200.1.1.1`).
+   * **Servidor DHCP:** Criei o pool `REDE_LOCAL` para automatizar a entrega de IPs na LAN, excluindo os 10 primeiros endereços por segurança.
+   * **NAT (Network Address Translation):** Mapeei as interfaces interna (`inside`) e externa (`outside`), criei uma Access-List (ACL 1) e habilitei o NAT Overload (PAT) para permitir a saída dos pacotes para a internet.
+   * Defini a rota padrão (Default Route `0.0.0.0`) enviando todo o tráfego desconhecido para o provedor.
+
+## 🚀 Validação e Resultados
+Para comprovar que a integração entre a rede privada e a rede pública foi bem-sucedida:
+* No PC0, alterei as configurações de rede de Estático para **DHCP**. O equipamento recebeu perfeitamente o IP `192.168.1.11`, a máscara e o DNS.
+* Acessei o navegador web do PC0 e digitei a URL `google.com`. A página carregou imediatamente, confirmando o sucesso na resolução de nomes (DNS), na tradução de endereços (NAT) e no roteamento de pacotes fim-a-fim.
+
+---
+### 📸 
